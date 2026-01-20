@@ -3,8 +3,10 @@ applyTo: '**'
 ---
 This project is a Puppet control repo and should use code assist capabilities of CoPilot with a Puppet MCP server.
 
-- ALWAYS call the puppet language guide MCP tool before you write any Puppet code.
-- ALWAYS call the other puppet MCP tools to list entities and retrieve their docs. 
+**Key Principle:** When uncertain about implementation approach, architecture, or best practices, consult the Puppet MCP service BEFORE proposing code changes.
+
+- ALWAYS call the Puppet language guide MCP tool before proposing implementation, asking questions, or generating Puppet code
+- ALWAYS call the other Puppet MCP tools to list entities and retrieve their docs. 
 - Any Puppet entity you instantiate should be validated against the docs using the MCP `get_puppet_entity_docs` tool.
 
 ## MCP Server Consultation Quick Reference
