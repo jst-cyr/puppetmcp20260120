@@ -1,0 +1,11 @@
+version: 5
+defaults:
+  datadir: hieradata
+  data_hash: yaml_data
+hierarchy:
+  - name: "Per-node data"
+    path: "nodes/%{trusted.certname}.yaml"
+  - name: "Environment data"
+    path: "environments/%{::environment}.yaml"
+  - name: "Common"
+    path: "common.yaml"

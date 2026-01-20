@@ -1,0 +1,3 @@
+---
+# Common Hiera data for control-repo
+profile::webserver::port: 8080
